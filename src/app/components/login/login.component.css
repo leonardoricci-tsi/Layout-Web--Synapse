@@ -1,0 +1,93 @@
+.container-fluid {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 600px 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.login p {
+    font-family: "Poppins", sans-serif;
+    color: #263238;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+
+}
+
+form .cadastrar {
+    color: var(--gray-gray-color-400, #858E97);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+
+}
+
+form .cadastrar a {
+    color: #21BC6B;
+    text-decoration: none;
+}
+
+form .form-label {
+    color: #ACB5BE;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login button {
+    width: 360px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #21BC6B;
+    background: #21BC6B;
+    text-decoration: none;
+
+}
+.login button p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    
+}
+.login button a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 576px){
+    .login{
+        display: flex;
+        width: 100% !important;
+    }
+
+    .container{
+        display: flex;
+        grid-template-columns: 0px 0px;
+        margin-top: 20px;
+    }
+}
