@@ -1,0 +1,90 @@
+.input-icon-right {
+    position: absolute;
+    top: 70%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 600px 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Cadastrar-se p {
+    color: #263238;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.Cadastrar-se {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .Entrar {
+    color: var(--gray-gray-color-400, #858E97);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+
+form .Entrar a {
+    color: #21BC6B;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+form .form-label {
+    color: #ACB5BE;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Cadastrar-se button {
+    width: 360px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #21BC6B;
+    background: #21BC6B;
+}
+
+@media (max-width: 576px) {
+    .login {
+        display: flex;
+        width: 100% !important;
+    }
+
+    .container {
+        display: flex;
+        grid-template-columns: 0px 0px;
+        margin-top: 20px;
+    }
+}
