@@ -52,34 +52,9 @@
 
   <section class="container">
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #DFF6C4;">
-          <h5 class="fw-bold m-0">1º Termo</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #EDE5DA;">
-          <h5 class="fw-bold m-0">2º Termo</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #A6D8A8;">
-          <h5 class="fw-bold m-0">3º Termo</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #BCE9A8;">
-          <h5 class="fw-bold m-0">4º Termo</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #FFFBCC;">
-          <h5 class="fw-bold m-0">5º Termo</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center p-4" style="background-color: #A8B6A6;">
-          <h5 class="fw-bold m-0">6º Termo</h5>
+      <div class="col-md-4" *ngFor="let termo of termos">
+        <div class="card text-center p-4" [ngStyle]="{'background-color': termo.cor}">
+          <h5 class="fw-bold m-0">{{ termo.nome }}</h5>
         </div>
       </div>
     </div>
