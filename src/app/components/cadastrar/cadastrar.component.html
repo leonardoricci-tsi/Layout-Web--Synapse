@@ -1,39 +1,41 @@
-
 <body>
-    <div class="container-fluid">
-        <div class="container ">
-            <div class="d-sm-block d-none">
-                <img class="img-fluid d-sm-block d-none" src="/img/Book lover-bro 2.png">
-            </div>
-            <div class="Cadastrar-se">
-                <p>Cadastre-se</p>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nome</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">E-mail</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-4 position-relative">
-                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control pe-5" id="exampleInputPassword1">
-                        <img src="/img/unlock 1.png" class="input-icon-right" alt="ícone senha">
-                    </div>
-                    <div class="mb-4 position-relative">
-                        <label for="exampleInputPassword1" class="form-label">Confirmação Senha</label>
-                        <input type="password" class="form-control pe-5" id="exampleInputPassword1">
-                        <img src="/img/lock.png" class="input-icon-right" alt="ícone senha">
-                    </div>
-                        <button type="submit" class="btn btn-primary" (click)="navigateToHome()">Continuar</button>
-                        <p class="Entrar"> Possui conta? <a href="/">Entrar</a></p>
-                </form>
-
-            </div>
+  <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Coluna da imagem -->
+        <div class="col-md-6 d-none d-md-block">
+          <img class="img-fluid" src="/img/Book lover-bro 2.png" alt="Ilustração">
         </div>
 
+        <!-- Coluna do formulário de cadastro -->
+        <div class="col-md-6 ">
+          <div class="Cadastrar-se text-center">
+            <p>Cadastre-se</p>
+            <form>
+              <div class="mb-3 text-start">
+                <label for="inputNome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNome">
+              </div>
+              <div class="mb-3 text-start" >
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+              <div class="mb-4 position-relative text-start">
+                <label for="inputSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control pe-5" id="inputSenha">
+                <img src="/img/unlock 1.png" class="input-icon-right" alt="ícone senha">
+              </div>
+              <div class="mb-4 text-start position-relativ">
+                <label for="inputConfirmacao" class="form-label">Confirmação Senha</label>
+                <input type="password" class="form-control pe-5" id="inputConfirmacao">
+                <img src="/img/lock.png" class="input-icon-right" alt="ícone senha">
+              </div>
+              <button type="submit" class="btn btn-primary w-100" (click)="navigateToHome()">Continuar</button>
+              <p class="Entrar mt-3">Possui conta? <a href="/">Entrar</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 </body>
-
